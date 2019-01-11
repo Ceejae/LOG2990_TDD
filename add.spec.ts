@@ -27,4 +27,7 @@ describe('add function', () => {
     it('should return the sum of n numbers seperated by a coma or backslash n character if valid', () => {
         expect(() => add('1\n,')).to.throw('Invalid input string');
     });
+    it('should change separator if string begins with //[separator]', () => {
+        expect(add('//;\n1;2')).to.equal(3);
+    });
 });

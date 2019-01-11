@@ -12,4 +12,7 @@ describe('add function', () => {
     it('should return n for a unique number n', () => {
         expect(add('14')).to.equal(14);
     });
+    it('should return the sum of two numbers seperated by a coma', () => {
+        expect(add('2,3')).to.equal(5);
+    });
 });

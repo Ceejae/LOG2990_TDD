@@ -15,4 +15,10 @@ describe('add function', () => {
     it('should return the sum of two numbers seperated by a coma', () => {
         expect(add('2,3')).to.equal(5);
     });
+    it('should return the sum of n numbers seperated by a coma', () => {
+        expect(add('2,3,5')).to.equal(10);
+    });
+    it('should return the sum of n numbers seperated by a coma', () => {
+        expect(add('11,10,2,3,5,1,3')).to.equal(35);
+    });
 });

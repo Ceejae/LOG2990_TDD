@@ -9,6 +9,11 @@ export function add(s: string): number {
         return parseInt(numbers[0]);
     }
 
-    return 0;
+    var sum = 0;
+    for(let num of numbers) {
+        sum += parseInt(num);
+    }
+
+    return sum;
 
 }

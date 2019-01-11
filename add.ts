@@ -4,7 +4,7 @@ export function add(s: string): number {
         return 0;
     }
 
-    let numbers = s.split(',');
+    let numbers = s.replace('\n', ',').split(',');
     if(numbers.length == 1) {
         return parseInt(numbers[0]);
     }

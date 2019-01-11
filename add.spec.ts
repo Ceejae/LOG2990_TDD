@@ -25,6 +25,6 @@ describe('add function', () => {
         expect(add('1\n2,3')).to.equal(6);
     });
     it('should return the sum of n numbers seperated by a coma or backslash n character if valid', () => {
-        expect(add('1\n,')).to.throw;
+        expect(add('1\n,')).to.throw('Invalid input string');
     });
 });

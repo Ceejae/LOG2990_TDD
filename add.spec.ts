@@ -21,4 +21,10 @@ describe('add function', () => {
     it('should return the sum of n numbers seperated by a coma', () => {
         expect(add('11,10,2,3,5,1,3')).to.equal(35);
     });
+    it('should return the sum of n numbers seperated by a coma or backslash n character if valid', () => {
+        expect(add('1\n2,3')).to.equal(6);
+    });
+    it('should return the sum of n numbers seperated by a coma or backslash n character if valid', () => {
+        expect(add('1\n,')).to.throw;
+    });
 });

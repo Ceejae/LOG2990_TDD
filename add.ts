@@ -11,6 +11,9 @@ export function add(s: string): number {
 
     var sum = 0;
     for(let num of numbers) {
+        if(num == '') {
+            throw('Invalid input string');
+        }
         sum += parseInt(num);
     }
 
